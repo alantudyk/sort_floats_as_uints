@@ -13,3 +13,16 @@ clang:
 	as  uints:      109 ms
 
 ```
+### Snapdragon 778G:
+```
+$ ./test
+
+	as floats:      137 ms
+	as  uints:      125 ms
+
+$ taskset -c 0 ./test
+
+	as floats:      300 ms
+	as  uints:      295 ms
+
+```
