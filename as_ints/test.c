@@ -40,7 +40,7 @@ static void sort_floats_as_ints(float *const f, const size_t n) {
 
     if (a[r] >= 0) {
         last_neg = 0;
-        while (l < r) {
+        while (l <= r) {
             ssize_t m = (l + r) / 2;
             if (a[m] < 0)
                 last_neg = m, l = m + 1;
